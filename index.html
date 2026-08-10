@@ -3,41 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Szarie's Page</title>
+    <meta name="description" content="Portfolio of Szarie">
+    <title>Szarie | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <img src="https://avatars.githubusercontent.com/u/100989002?v=4" alt="Szarie's Avatar" class="avatar">
-   <h1>Hi!
-   </h1>
-   
-   <main>
-        <section id="social">
-            <div class="social-links">
-                <a href="https://github.com/szarie" target="_blank">
-                    <svg class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <title>GitHub</title>
-                        <path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
-                    </svg>
-                </a>
-                <a href="https://myanimelist.net/profile/szarie" target="_blank">
-                    <svg class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <title>MyAnimeList</title><path d="M8.45 15.91H6.067v-5.506h-.028l-1.833 2.454-1.796-2.454H2.39v5.507H0V6.808h2.263l1.943 2.671 1.98-2.671H8.45zm8.499 0h-2.384v-2.883H11.96c.008 1.011.373 1.989.914 2.884l-1.942 1.284c-.52-.793-1.415-2.458-1.415-4.527 0-1.015.211-2.942 1.638-4.37a4.809 4.809 0 0 1 2.737-1.37c.96-.15 1.936-.12 2.905-.12l.555 2.051H15.48c-.776 0-1.389.113-1.839.337-.637.32-1.009.622-1.447 1.78h2.372v-1.84h2.384zm3.922-2.05H24l-.555 2.05h-4.962V6.809h2.388z"/>
-                    </svg>
-                </a>
-                <a href="https://artistic-qr-eight.vercel.app/" target="_blank">
-                    <svg class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <title>Artistic QR</title><path d="m12 1.608 12 20.784H0Z"/>
-                    </svg>
-                </a>
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <a href="#home" class="brand">Szarie</a>
+            <nav class="main-nav" aria-label="Primary navigation">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
 
+    <section id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-copy">
+                <span class="eyebrow">Developer • Designer • Creator</span>
+                <h1>Hi, I'm Szarie.</h1>
+                <p class="hero-text">I build thoughtful digital experiences, playful web projects, and solutions that turn ideas into polished products.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projects">View Projects</a>
+                    <a class="button button-secondary" href="mailto:hello@example.com">Let's Connect</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/szarie" target="_blank" aria-label="GitHub">GitHub</a>
+                    <a href="https://myanimelist.net/profile/szarie" target="_blank" aria-label="MyAnimeList">MyAnimeList</a>
+                    <a href="https://artistic-qr-eight.vercel.app/" target="_blank" aria-label="Artistic QR">Artistic QR</a>
+                </div>
+            </div>
+            <aside class="hero-card">
+                <img src="https://avatars.githubusercontent.com/u/100989002?v=4" alt="Szarie's Avatar" class="avatar">
+                <div class="status-card">
+                    <span class="status-dot"></span>
+                    <span>Available for freelance work</span>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <main>
+        <section id="about" class="section about-section">
+            <div class="container two-column">
+                <div>
+                    <span class="section-kicker">About Me</span>
+                    <h2>Turning curiosity into code.</h2>
+                    <p>I am a creative developer interested in building beautiful interfaces, useful web apps, and projects that explore both technical and artistic problem solving.</p>
+                    <p>I enjoy working across front-end development, visual design, and small product ideas from concept to launch.</p>
+                </div>
+                <div class="about-panel">
+                    <div class="mini-stat">
+                        <span class="stat-number">01</span>
+                        <span class="stat-copy">Front-end focused</span>
+                    </div>
+                    <div class="mini-stat">
+                        <span class="stat-number">02</span>
+                        <span class="stat-copy">Design-driven thinking</span>
+                    </div>
+                    <div class="mini-stat">
+                        <span class="stat-number">03</span>
+                        <span class="stat-copy">Continuous learner</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-kicker">Featured Work</span>
+                    <h2>Selected Projects</h2>
+                </div>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="project-card-top">
+                            <span class="project-tag">Web App</span>
+                            <span class="project-icon">✦</span>
+                        </div>
+                        <h3>Artistic QR</h3>
+                        <p>A visual QR experience that blends utility with creative presentation.</p>
+                        <a class="text-link" href="https://artistic-qr-eight.vercel.app/" target="_blank">View project →</a>
+                    </article>
+                    <article class="project-card featured-project">
+                        <div class="project-card-top">
+                            <span class="project-tag">Design System</span>
+                            <span class="project-icon">✎</span>
+                        </div>
+                        <h3>Personal Site</h3>
+                        <p>A clean static website built for publishing work, projects, and online identity.</p>
+                        <a class="text-link" href="#home">Visit homepage →</a>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card-top">
+                            <span class="project-tag">Community</span>
+                            <span class="project-icon">☄</span>
+                        </div>
+                        <h3>Anime & Culture</h3>
+                        <p>Sharing interests, recommendations, and creative references from media culture.</p>
+                        <a class="text-link" href="https://myanimelist.net/profile/szarie" target="_blank">Explore profile →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-heading centered-heading">
+                    <span class="section-kicker">Toolbox</span>
+                    <h2>Skills & Interests</h2>
+                </div>
+                <div class="skill-grid">
+                    <div class="skill-card">
+                        <span class="skill-name">Frontend Development</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 95%;"></div></div>
+                        <ul class="tag-list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Responsive UI</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-name">Backend Development</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 84%;"></div></div>
+                        <ul class="tag-list">
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>REST APIs</li>
+                            <li>Authentication</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-name">Data Engineering</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+                        <ul class="tag-list">
+                            <li>ETL Pipelines</li>
+                            <li>Python</li>
+                            <li>SQL</li>
+                            <li>Data Modeling</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-name">Tools & Platforms</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+                        <ul class="tag-list">
+                            <li>GitHub</li>
+                            <li>Docker</li>
+                            <li>Postman</li>
+                            <li>PostgreSQL</li>
+                            <li>Airflow</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="container contact-panel">
+                <div>
+                    <span class="section-kicker">Let's Work Together</span>
+                    <h2>Have an idea to build?</h2>
+                    <p>I'm interested in collaborations, personal projects, and front-end development work.</p>
+                </div>
+                <a class="button button-primary" href="mailto:hello@example.com">Contact Me</a>
             </div>
         </section>
     </main>
-     <p>愛子</p>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <span>© 2026 Szarie</span>
+            <span>Built with GitHub Pages</span>
+        </div>
+    </footer>
 </body>
 </html>
-<!-- #69779b
-#9692af
-#acdbdf
-#d7eaea -->
